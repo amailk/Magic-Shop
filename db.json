@@ -1,0 +1,39 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Chocolate Frog",
+      "image": "chocolatefrog.png"
+      "description": "Chocolate shaped frog with a trading card",
+      "price": 10.0
+    },
+    {
+      "id": 2,
+      "name": "Wand",
+      "image": "wand.png"
+      "description": "its a wand",
+      "price": 24.0
+    },
+    {
+      "id": 3,
+      "name": "Owl",
+      "image": "owl.png"
+      "description": "Pet owl",
+      "price": 200.0
+    },
+    {
+      "id": 4,
+      "name": "Cauldron",
+      "image": "cauldron.png"
+      "description": "Cauldron for potions",
+      "price": 50.0
+    },
+    {
+      "id": 5,
+      "name": "Robes",
+      "image": "robes.png"
+      "description": "School Robes",
+      "price": 80.0
+    }
+  ]
+}
