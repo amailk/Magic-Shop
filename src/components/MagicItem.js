@@ -1,14 +1,14 @@
 import React from 'react'
 
 
-export const MagicItem = () =>
+export const MagicItem = (props) =>
 {
   return (
     <li>
-      <h3>Title</h3>
-      <img />
-      <p>Description</p>
-      <h4>$2.00</h4>
+      <h3>{props.name}</h3>
+      <img src="images/{props.image}" />
+      <p>{props.description}</p>
+      <h4>${props.price}</h4>
       <button>Buy</button>
     </li>
   )
