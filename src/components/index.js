@@ -1,2 +1,5 @@
+export {Cart} from './Cart'
+export {Checkout} from './Checkout'
+export {Home} from './Home'
 export {MagicItem} from './MagicItem'
 export {MagicItemList} from './MagicItemList'
