@@ -6,9 +6,21 @@ import { MagicItemList } from './MagicItemList'
 var items = require("./../../db.json").items;
 
 export class Home extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      cart: {}
+    }
+  }
 
-  state = {
-    cart: []
+
+  addToCart = (id) => {
+    if (this.state.cart[id]) {
+      this.state.cart[id] += 1;
+    } else {
+      this.state.cart[id] = 1;
+    }
+    console.log(this.state);
   }
 
   render () {
@@ -18,7 +30,7 @@ export class Home extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Magic Shop</h2>
         </div>
-        <MagicItemList items={items}/>
+        <MagicItemList items={items} addItemCallback={this.addToCart}/>
       </div>
     );
   }
