@@ -11,7 +11,7 @@ export const MagicItem = (props) =>
   return (
     <li>
       <h3>{props.name}</h3>
-      <img src={"images/" + props.image} />
+      <img src={"images/" + props.image} alt={"Image of " + props.name}/>
       <p>{props.description}</p>
       <h4>${props.price}</h4>
       <button onClick={handleClick}>Buy</button>
