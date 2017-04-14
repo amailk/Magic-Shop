@@ -9,17 +9,16 @@ export class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      cart: {}
+      cart: [0, 0, 0, 0, 0]
     }
   }
 
 
   addToCart = (id) => {
-    if (this.state.cart[id]) {
-      this.state.cart[id] += 1;
-    } else {
-      this.state.cart[id] = 1;
-    }
+    var newCart = this.state.cart.slice();
+    newCart[id] += 1;
+    this.setState({cart: newCart});
+
     console.log(this.state);
   }
 
